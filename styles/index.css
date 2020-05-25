@@ -1,0 +1,9 @@
+@import "./reset.css";
+
+body {
+   background: aliceblue;
+}
+
+p {
+   color: red;
+}

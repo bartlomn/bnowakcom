@@ -1,9 +1,26 @@
 {
   "name": "bnowakcom",
   "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
   "dependencies": {
+    "classnames": "^2.2.6",
+    "date-fns": "^2.14.0",
+    "gray-matter": "^4.0.2",
+    "next": "^9.4.2",
     "nord": "^0.2.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "remark": "^12.0.0",
+    "remark-html": "^11.0.2"
+  },
+  "devDependencies": {
+    "chalk": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "postcss-preset-env": "^6.7.0"
   }
 }
