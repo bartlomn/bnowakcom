@@ -1,0 +1,43 @@
+.container {
+  height: 10rem;
+  position: relative;
+}
+
+.greeting {
+  position: absolute;
+  color: #d8dee9;
+  mix-blend-mode: multiply;
+  font-size: 12rem;
+  font-weight: 900;
+}
+
+.hero,
+.heroDot {
+  position: absolute;
+  color: #5e81ac;
+  mix-blend-mode: multiply;
+  font-size: 6rem;
+}
+
+.hero {
+  transform: translate3d(-4px, 0, 0);
+}
+
+.heroDot {
+  display: inline;
+}
+
+.heroOverlay {
+  position: absolute;
+  height: 10rem;
+  background: #ebcb8b;
+  mix-blend-mode: multiply;
+}
+
+.headline {
+  position: absolute;
+  color: #4c566a;
+  font-size: 1.5rem;
+  font-weight: 200;
+  bottom: 0;
+}

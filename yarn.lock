@@ -1232,7 +1232,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.9.6, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:7.9.6, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.8.4":
   version: 7.9.6
   resolution: "@babel/runtime@npm:7.9.6"
   dependencies:
@@ -2020,6 +2020,7 @@ __metadata:
     postcss-preset-env: ^6.7.0
     react: ^16.13.1
     react-dom: ^16.13.1
+    react-spring: ^8.0.27
     remark: ^12.0.0
     remark-html: ^11.0.2
   languageName: unknown
@@ -6868,7 +6869,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.7.2, prop-types@npm:^15.6.2":
+"prop-types@npm:15.7.2, prop-types@npm:^15.5.8, prop-types@npm:^15.6.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -7050,6 +7051,19 @@ fsevents@~2.1.2:
   version: 0.8.2
   resolution: "react-refresh@npm:0.8.2"
   checksum: 3/8d9385ceaa4170bc37839f8d7c9f81ac6323c0ede1aa054113b88be96125bd57ca947d6dfe422b7f0122450c93282828d9fb9465ee2a8d4c6ae48538e6774ee3
+  languageName: node
+  linkType: hard
+
+"react-spring@npm:^8.0.27":
+  version: 8.0.27
+  resolution: "react-spring@npm:8.0.27"
+  dependencies:
+    "@babel/runtime": ^7.3.1
+    prop-types: ^15.5.8
+  peerDependencies:
+    react: ">= 16.8.0"
+    react-dom: ">= 16.8.0"
+  checksum: 3/8f041fd3037df9b610deeb5eb12d035ed9188ee0be4d2882b017db6074e7ab66ec9a990506e687274576516557d427a9199497b5559d3409ec38986dba987587
   languageName: node
   linkType: hard
 

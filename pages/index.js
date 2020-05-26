@@ -1,11 +1,8 @@
+import React from "react";
+import headerComponent from "./../components/header";
+
 const staticContent = () => (
   <>
-    <header>
-      <h1 className="hero">Bart Nowak.</h1>
-      <h2 className="headline">
-        Hands-on contributor. Technology strategist. Servant team leader.
-      </h2>
-    </header>
     <section className="intro">
       <hr />
       <p className="main">
@@ -64,4 +61,6 @@ const staticContent = () => (
   </>
 );
 
-export default staticContent;
+const main = () => [headerComponent()];
+
+export default main;

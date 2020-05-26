@@ -55,27 +55,6 @@ body {
    max-width: 40rem;
  }
  
- .hero {
-   color: #5e81ac;
-   font-size: 6rem;
- }
- 
- .hero::before {
-   content: "Hi, I'm";
-   color: #d8dee9;
-   font-size: 12rem;
-   position: absolute;
-   mix-blend-mode: multiply;
-   top: -3rem;
-   left: -1rem;
-   font-weight: 900;
- }
- 
- .headline {
-   color: #4c566a;
-   font-size: 1.5rem;
-   font-weight: 200;
- }
  
  .linklist {
    line-height: 2rem;
