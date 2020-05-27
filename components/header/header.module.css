@@ -1,13 +1,14 @@
 .container {
   height: 10rem;
   position: relative;
+  /* transform: translate3d(0, 25vh, 0); */
 }
 
 .greeting {
   position: absolute;
   color: #d8dee9;
   mix-blend-mode: multiply;
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: 900;
 }
 
@@ -38,6 +39,16 @@
   position: absolute;
   color: #4c566a;
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 300;
   bottom: 0;
+}
+@media (orientation: landscape) {
+  .headline {
+    max-width: 44rem;
+  }
+}
+@media (orientation: portrait) and (max-device-width: 639px){
+  .headline {
+    max-width: 16rem;
+  }
 }

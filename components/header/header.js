@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useSpring, animated, useChain } from "react-spring";
+import { useMediaQuery } from "react-responsive";
 
 import {
   container,
@@ -16,7 +17,7 @@ const config = {
   friction: 20,
 };
 
-const Greeting = ({ style }) => {
+const Greeting = ({ style } = {}) => {
   return (
     <animated.div className={greeting} style={style}>
       <span>Hi, I'm</span>
@@ -24,7 +25,7 @@ const Greeting = ({ style }) => {
   );
 };
 
-const Hero = ({ style }) => {
+const Hero = ({ style } = {}) => {
   return (
     <animated.h1 style={style} className={hero}>
       Bart Nowak
@@ -32,7 +33,7 @@ const Hero = ({ style }) => {
   );
 };
 
-const HeroDot = ({ style }) => {
+const HeroDot = ({ style } = {}) => {
   return (
     <animated.h1 style={style} className={heroDot}>
       .
@@ -40,24 +41,26 @@ const HeroDot = ({ style }) => {
   );
 };
 
-const HeroOverlay = ({ style }) => (
+const HeroOverlay = ({ style } = {}) => (
   <animated.div style={style} className={heroOverlay}></animated.div>
 );
 
-const Headline = ({ style }) => (
+const Headline = ({ style } = {}) => (
   <animated.h2 className={headline} style={style}>
     Hands-on contributor. Technology strategist. Servant team leader.
   </animated.h2>
 );
 
-const Header = () => {
+const Header = ({ headerStyle, onAnimationEnd = () => null } = {}) => {
+  const isPortrait = useMediaQuery({
+    query: "(orientation: portrait) and (max-device-width: 639px)",
+  });
   const greetingRef = useRef();
   const greetingAnimation = useSpring({
     config,
     ref: greetingRef,
-    from: { transform: "translate3d(-6.5rem, -30rem, 0)", opacity: 0 },
-    transform: "translate3d(-6.5rem, -9rem, 0)",
-    opacity: 1,
+    from: { transform: "translate3d(-4rem, -37rem, 0)", opacity: 0 },
+    to: [{ transform: "translate3d(-4rem, -7rem, 0)", opacity: 1 }],
   });
   const overlayRef = useRef();
   const overlayAnimation = useSpring({
@@ -98,24 +101,33 @@ const Header = () => {
   });
   const headlineRef = useRef();
   const headlineAnimation = useSpring({
-   config,
-   ref: headlineRef,
-   from: { transform: "translate3d(0, 1rem, 0)", opacity: 0 },
-   to: [{ transform: "translate3d(0, 0, 0)", opacity: 1 }],
- });
+    config,
+    ref: headlineRef,
+    from: {
+      transform: `translate3d(0, ${isPortrait ? 7 : 4}rem, 0)`,
+      opacity: 0,
+    },
+    to: [
+      {
+        transform: `translate3d(0, ${isPortrait ? 5 : 0}rem, 0)`,
+        opacity: 1,
+      },
+    ],
+    onRest: onAnimationEnd
+  });
 
   useChain(
     [greetingRef, overlayRef, heroRef, heroDotRef, headlineRef],
     [0, 0.71, 1.26, 1.8, 1.8]
   );
   return (
-    <header className={container}>
+    <animated.header className={container} style={headerStyle}>
       <Greeting style={greetingAnimation} />
       <Hero style={heroAnimation} />
       <HeroDot style={heroDotAnimation} />
       <HeroOverlay style={overlayAnimation} />
       <Headline style={headlineAnimation} />
-    </header>
+    </animated.header>
   );
 };
 

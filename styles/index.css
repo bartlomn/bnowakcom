@@ -1,66 +1,95 @@
 @import "./reset.css";
 
+:root {
+  --color-backgroud-0: #eceff4;
+
+  --color-foregroung-0: #2e3440;
+}
+
+html {
+  font-size: 10px;
+}
+@media (min-device-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-device-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 body {
-   background-color: #eceff4;
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-     sans-serif;
-   -webkit-font-smoothing: antialiased;
-   color: #2e3440;
-   padding: 6rem;
- }
- 
- a {
-   color: #5e81ac;
-   font-family: "Lucida Console", Monaco, monospace;
-   font-weight: 100;
-   text-transform: lowercase;
-   font-size: 1rem;
-   padding-block-end: 4px;
-   background: #eceff4; /* same as site background */
-   text-decoration: underline;
-   text-underline-position: under;
-   text-decoration-color: #5e81ac;
-   /* text-decoration: none; */
- }
- 
- hr {
-   margin-block-start: 2rem;
-   margin-block-end: 2rem;
-   max-width: 6rem;
-   text-align: left;
-   margin-left: 0;
-   border: 0;
-   border-bottom: 1px solid #88c0d0;
- }
- 
- p {
-   text-align: justify;
-   font-weight: 100;
- }
- 
- ul {
-   list-style-type: none;
-   margin-block-start: 0;
-   margin-block-end: 0;
-   padding-inline-start: 0;
- }
- 
- header {
-   max-width: 41rem;
- }
- 
- section {
-   max-width: 40rem;
- }
- 
- 
- .linklist {
-   line-height: 2rem;
- }
- 
- .main {
-   font-size: 1.25rem;
- }
- 
+  background-color: var(--color-backgroud-0);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: var(--color-foregroung-0);
+  padding: 4rem;
+}
+@media (min-device-width: 1024px) {
+  body {
+    padding: 5rem;
+  }
+}
+@media (min-device-width: 1280px) {
+  body {
+    padding: 6rem;
+  }
+}
+
+a {
+  color: #5e81ac;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-weight: 100;
+  text-transform: lowercase;
+  font-size: 1rem;
+  padding-block-end: 4px;
+  background: #eceff4; /* same as site background */
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #5e81ac;
+  /* text-decoration: none; */
+}
+
+hr {
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+  max-width: 6rem;
+  text-align: left;
+  margin-left: 0;
+  border: 0;
+  border-bottom: 1px solid #88c0d0;
+}
+
+p {
+  text-align: justify;
+  font-weight: 100;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+section {
+  max-width: 40rem;
+}
+
+.linklist {
+  line-height: 2rem;
+}
+
+.main {
+  font-size: 1.25rem;
+}
+
+@media (orientation: portrait) and (max-device-width: 639px) {
+  .intro {
+    margin-block-start: 7rem;
+  }
+}
