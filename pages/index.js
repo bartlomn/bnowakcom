@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useSpring, animated, interpolate } from "react-spring";
 
 import HeaderComponent from "./../components/header";
+import renderScene from "./../components/threejs/mainScene";
 
 const config = {
   mass: 1,
@@ -101,6 +102,7 @@ const Main = () => {
       },
     ],
     delay: 50,
+    onRest: () => renderScene(),
   });
 
   return (

@@ -6,11 +6,13 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-           <SystemHead/>
+          <SystemHead />
         </Head>
         <body>
           <Main />
           <NextScript />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
         </body>
       </Html>
     );
