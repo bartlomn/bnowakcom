@@ -1,12 +1,11 @@
 .container {
   height: 10rem;
   position: relative;
-  /* transform: translate3d(0, 25vh, 0); */
 }
 
 .greeting {
   position: absolute;
-  color: #d8dee9;
+  color: var(--color-accent-1);
   mix-blend-mode: multiply;
   font-size: 10rem;
   font-weight: 900;
@@ -15,7 +14,7 @@
 .hero,
 .heroDot {
   position: absolute;
-  color: #5e81ac;
+  color: var(--color-accent-0);
   mix-blend-mode: multiply;
   font-size: 6rem;
 }
@@ -31,24 +30,24 @@
 .heroOverlay {
   position: absolute;
   height: 10rem;
-  background: #ebcb8b;
+  background: var(--color-accent-3);
   mix-blend-mode: multiply;
 }
 
 .headline {
   position: absolute;
-  color: #4c566a;
+  color: var(--color-foregroung-1);
   font-size: 1.5rem;
   font-weight: 300;
   bottom: 0;
 }
-@media (orientation: landscape) {
-  .headline {
-    max-width: 44rem;
-  }
-}
 @media (orientation: portrait) and (max-device-width: 639px){
   .headline {
     max-width: 16rem;
+  }
+}
+@media (min-device-width: 640px) and (max-device-width: 1023px){
+  .headline {
+    white-space: nowrap;
   }
 }

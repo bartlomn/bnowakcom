@@ -1,0 +1,24 @@
+.linkList {
+  position: absolute;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 2rem;
+  padding-block-end: 2rem;
+}
+
+.ulStyle {
+  padding-inline-start: 0;
+}
+
+.linkStyle {
+  color: #5e81ac;
+  font-family: monospace;
+  font-weight: 200;
+  text-transform: lowercase;
+  font-size: 1rem;
+  padding-block-end: 4px;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #5e81ac;
+}

@@ -1,13 +1,30 @@
 @import "./reset.css";
 
 :root {
+  /* page background */
   --color-backgroud-0: #eceff4;
 
+  /* primary text color */
   --color-foregroung-0: #2e3440;
+  /* secondary text color */
+  --color-foregroung-1: #4c566a;
+
+  /* primary accent color */
+  --color-accent-0: #5e81ac;
+  /* secondary accent color */
+  --color-accent-1: #d8dee9;
+  /* ... you get the gist */
+  --color-accent-3: #ebcb8b;
+  --color-accent-4: #88C0D0;
 }
 
 html {
-  font-size: 10px;
+  font-size: 8px;
+}
+@media (min-device-width: 480px) {
+  html {
+    font-size: 10px;
+  }
 }
 @media (min-device-width: 640px) {
   html {
@@ -30,7 +47,12 @@ body {
 }
 
 .app {
-  padding: 4rem;
+  padding: 3rem;
+}
+@media (min-device-width: 640px) {
+  .app {
+    padding: 4rem;
+  }
 }
 @media (min-device-width: 1024px) {
   .app {
@@ -43,63 +65,9 @@ body {
   }
 }
 
-a {
-  color: #5e81ac;
-  font-family: "Lucida Console", Monaco, monospace;
-  font-weight: 100;
-  text-transform: lowercase;
-  font-size: 1rem;
-  padding-block-end: 4px;
-  background: #eceff4; /* same as site background */
-  text-decoration: underline;
-  text-underline-position: under;
-  text-decoration-color: #5e81ac;
-  /* text-decoration: none; */
-}
-
-hr {
-  margin-block-start: 2rem;
-  margin-block-end: 2rem;
-  max-width: 6rem;
-  text-align: left;
-  margin-left: 0;
-  border: 0;
-  border-bottom: 1px solid #88c0d0;
-}
-
-p {
-  text-align: justify;
-  font-weight: 200;
-}
-
-ul {
-  list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-}
-
-section {
-  max-width: 40rem;
-}
-
-.linklist {
-  line-height: 2rem;
-}
-
-.main {
-  font-size: 1.25rem;
-}
-
-@media (orientation: portrait) and (max-device-width: 639px) {
-  .intro {
-    margin-block-start: 7rem;
-  }
-}
-
 #renderScene {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   opacity: 0;
 }

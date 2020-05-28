@@ -1,6 +1,11 @@
-export default () => {
+export default ({
+  initialCameraPos = [-25, 100, 300],
+  targetCameraPos = [-50, 100, 175],
+  duration = 3.5,
+} = {}) => {
   global.TweenMax = global.gsap;
 
+  var textureFile = "images/dotTexture.png";
   var canvas = document.querySelector("#renderScene");
   var width = canvas.offsetWidth,
     height = canvas.offsetHeight;
@@ -18,7 +23,13 @@ export default () => {
   });
   renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
   renderer.setSize(width, height);
-  renderer.setClearColor(0xeceff4);
+  renderer.setClearColor(
+    parseInt(
+      getComputedStyle(document.body)
+        .getPropertyValue("--color-backgroud-0")
+        .replace(/#/, "0x")
+    )
+  );
 
   var scene = new THREE.Scene();
 
@@ -26,7 +37,7 @@ export default () => {
   raycaster.params.Points.threshold = 6;
 
   var camera = new THREE.PerspectiveCamera(30, width / height, 0.1, 2000);
-  camera.position.set(-50, 100, 175);
+  camera.position.set(...initialCameraPos);
 
   var galaxy = new THREE.Group();
   scene.add(galaxy);
@@ -34,7 +45,7 @@ export default () => {
   // Create dots
   var loader = new THREE.TextureLoader();
   loader.crossOrigin = "";
-  var dotTexture = loader.load("img/dotTexture.png");
+  var dotTexture = loader.load(textureFile);
   var dotsAmount = 2000;
   var dotsGeometry = new THREE.Geometry();
   var positions = new Float32Array(dotsAmount * 3);
@@ -86,18 +97,17 @@ export default () => {
 
   var bufferWrapGeom = new THREE.BufferGeometry();
   var attributePositions = new THREE.BufferAttribute(positions, 3);
-  bufferWrapGeom.addAttribute("position", attributePositions);
+  bufferWrapGeom.setAttribute("position", attributePositions);
   var attributeSizes = new THREE.BufferAttribute(sizes, 1);
-  bufferWrapGeom.addAttribute("size", attributeSizes);
+  bufferWrapGeom.setAttribute("size", attributeSizes);
   var attributeColors = new THREE.BufferAttribute(colorsAttribute, 3);
-  bufferWrapGeom.addAttribute("color", attributeColors);
+  bufferWrapGeom.setAttribute("color", attributeColors);
   var shaderMaterial = new THREE.ShaderMaterial({
     uniforms: {
       texture: {
         value: dotTexture,
       },
     },
-    //  vertexShader: document.getElementById("wrapVertexShader").textContent,
     vertexShader: `attribute float size;
 attribute vec3 color;
 varying vec3 vColor;
@@ -107,7 +117,6 @@ void main() {
    gl_PointSize = size * ( 350.0 / - mvPosition.z );
    gl_Position = projectionMatrix * mvPosition;
 }`,
-    //  fragmentShader: document.getElementById("wrapFragmentShader").textContent,
     fragmentShader: `varying vec3 vColor;
 uniform sampler2D texture;
 void main(){
@@ -220,8 +229,15 @@ void main(){
     resizeTm = setTimeout(onResize, 200);
   });
 
-  setTimeout(
-    () => TweenMax.to("#renderScene", { opacity: 1, duration: 1 }),
-    100
-  );
+  setTimeout(() => {
+    TweenMax.to("#renderScene", { opacity: 1, duration: duration / 5 });
+    //  const cameraPos = { x: -25, z: 300 };
+    const cameraPos = initialCameraPos.concat();
+    TweenMax.to(cameraPos, {
+      ...targetCameraPos,
+      duration,
+      ease: "power4.out",
+      onUpdate: () => camera.position.set(...cameraPos),
+    });
+  }, 0);
 };

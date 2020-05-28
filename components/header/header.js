@@ -1,6 +1,13 @@
-import { useRef } from "react";
-import { useSpring, animated, useChain } from "react-spring";
+import { animated, useChain } from "react-spring";
 import { useMediaQuery } from "react-responsive";
+
+import {
+  useGreetingSpring,
+  useOverlaySpring,
+  useHeroSpring,
+  useHeroDotSpring,
+  useHeadlineSpring,
+} from "./springs";
 
 import {
   container,
@@ -55,65 +62,15 @@ const Header = ({ headerStyle, onAnimationEnd = () => null } = {}) => {
   const isPortrait = useMediaQuery({
     query: "(orientation: portrait) and (max-device-width: 639px)",
   });
-  const greetingRef = useRef();
-  const greetingAnimation = useSpring({
+
+  const [greetingAnimation, greetingRef] = useGreetingSpring({ config });
+  const [overlayAnimation, overlayRef] = useOverlaySpring({ config });
+  const [heroAnimation, heroRef] = useHeroSpring({ config });
+  const [heroDotAnimation, heroDotRef] = useHeroDotSpring({ config });
+  const [headlineAnimation, headlineRef] = useHeadlineSpring({
     config,
-    ref: greetingRef,
-    from: { transform: "translate3d(-4rem, -37rem, 0)", opacity: 0 },
-    to: [{ transform: "translate3d(-4rem, -7rem, 0)", opacity: 1 }],
-  });
-  const overlayRef = useRef();
-  const overlayAnimation = useSpring({
-    config: {
-      ...config,
-      friction: 30,
-    },
-    ref: overlayRef,
-    from: { transform: "translate3d(-56.5rem, 0, 0)", width: "40rem" },
-    to: [
-      { transform: "translate3d(-6.5rem, 0, 0)", width: "40rem" },
-      { transform: "translate3d(33.5rem, 0, 0)", width: "0rem" },
-    ],
-  });
-  const heroRef = useRef();
-  const heroAnimation = useSpring({
-    config,
-    ref: heroRef,
-    from: {
-      clipPath: "inset(0 33.5rem 0 0)",
-    },
-    to: [
-      {
-        clipPath: "inset(0px 0px 0px 0rem)",
-      },
-    ],
-  });
-  const heroDotRef = useRef();
-  const heroDotAnimation = useSpring({
-    config: {
-      ...config,
-      tension: 300,
-      friction: 10,
-    },
-    ref: heroDotRef,
-    from: { transform: "translate3d(31.25rem, 3rem, 0) scale3d(0, 0, 1)" },
-    to: [{ transform: "translate3d(31.25rem, 0, 0) scale3d(1, 1, 1)" }],
-  });
-  const headlineRef = useRef();
-  const headlineAnimation = useSpring({
-    config,
-    ref: headlineRef,
-    from: {
-      transform: `translate3d(0, ${isPortrait ? 7 : 4}rem, 0)`,
-      opacity: 0,
-    },
-    to: [
-      {
-        transform: `translate3d(0, ${isPortrait ? 5 : 0}rem, 0)`,
-        opacity: 1,
-      },
-    ],
-    onRest: onAnimationEnd
+    isPortrait,
+    onRest: onAnimationEnd,
   });
 
   useChain(
