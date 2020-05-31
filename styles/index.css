@@ -21,17 +21,17 @@
 html {
   font-size: 8px;
 }
-@media (min-device-width: 480px) {
+@media (min-width: 480px) {
   html {
     font-size: 10px;
   }
 }
-@media (min-device-width: 640px) {
+@media (min-width: 640px) {
   html {
     font-size: 14px;
   }
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   html {
     font-size: 16px;
   }
@@ -49,17 +49,17 @@ body {
 .app {
   padding: 3rem;
 }
-@media (min-device-width: 640px) {
+@media (min-width: 640px) {
   .app {
     padding: 4rem;
   }
 }
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .app {
     padding: 5rem;
   }
 }
-@media (min-device-width: 1280px) {
+@media (min-width: 1280px) {
   .app {
     padding: 6rem;
   }

@@ -41,12 +41,12 @@
   font-weight: 300;
   bottom: 0;
 }
-@media (orientation: portrait) and (max-device-width: 639px){
+@media (orientation: portrait) and (max-width: 639px){
   .headline {
     max-width: 16rem;
   }
 }
-@media (min-device-width: 640px) and (max-device-width: 1023px){
+@media (min-width: 640px) and (max-width: 1023px){
   .headline {
     white-space: nowrap;
   }

@@ -60,7 +60,7 @@ const Headline = ({ style } = {}) => (
 
 const Header = ({ headerStyle, onAnimationEnd = () => null } = {}) => {
   const isPortrait = useMediaQuery({
-    query: "(orientation: portrait) and (max-device-width: 639px)",
+    query: "(orientation: portrait) and (max-width: 639px)",
   });
 
   const [greetingAnimation, greetingRef] = useGreetingSpring({ config });

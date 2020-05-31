@@ -46,7 +46,7 @@ export default ({
   var loader = new THREE.TextureLoader();
   loader.crossOrigin = "";
   var dotTexture = loader.load(textureFile);
-  var dotsAmount = 2000;
+  var dotsAmount = 3000;
   var dotsGeometry = new THREE.Geometry();
   var positions = new Float32Array(dotsAmount * 3);
 
@@ -221,7 +221,7 @@ void main(){
   }
 
   TweenMax.ticker.add(render);
-  TweenMax.ticker.fps(28);
+  TweenMax.ticker.fps(40);
   window.addEventListener("mousemove", onMouseMove);
   var resizeTm;
   window.addEventListener("resize", function () {
@@ -230,7 +230,7 @@ void main(){
   });
 
   setTimeout(() => {
-    TweenMax.to("#renderScene", { opacity: 1, duration: duration / 5 });
+    TweenMax.to("#renderScene", { opacity: 1, duration: duration / 3 });
     //  const cameraPos = { x: -25, z: 300 };
     const cameraPos = initialCameraPos.concat();
     TweenMax.to(cameraPos, {

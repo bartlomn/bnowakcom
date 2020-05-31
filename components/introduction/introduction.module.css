@@ -1,4 +1,4 @@
-@media (orientation: portrait) and (max-device-width: 639px) {
+@media (orientation: portrait) and (max-width: 639px) {
   .intro {
     margin-block-start: 7rem;
   }
