@@ -16,7 +16,7 @@ import {
   heroDot,
   heroOverlay,
   headline,
-} from "./header.module.css";
+} from "./header.scss";
 
 const config = {
   mass: 1,

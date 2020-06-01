@@ -1,4 +1,5 @@
-import "../styles/index.css";
+import "../styles/reset.scss";
+import "../styles/index.scss";
 
 export default function MyApp({ Component, pageProps }) {
   return (

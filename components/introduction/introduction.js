@@ -1,6 +1,6 @@
 import { animated } from "react-spring";
 
-import { intro, introText, hrule } from "./introduction.module.css";
+import { intro, introText, hrule } from "./introduction.scss";
 
 const Introduction = ({ style } = {}) => {
   return (

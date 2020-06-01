@@ -1,3 +1,5 @@
+import "./mainScene.scss";
+
 export default ({
   initialCameraPos = [-25, 100, 300],
   targetCameraPos = [-50, 100, 175],
@@ -231,7 +233,6 @@ void main(){
 
   setTimeout(() => {
     TweenMax.to("#renderScene", { opacity: 1, duration: duration / 3 });
-    //  const cameraPos = { x: -25, z: 300 };
     const cameraPos = initialCameraPos.concat();
     TweenMax.to(cameraPos, {
       ...targetCameraPos,

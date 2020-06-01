@@ -1,5 +1,5 @@
 import { animated } from "react-spring";
-import { linkList, linkStyle, ulStyle } from "./contactLinks.module.css";
+import { linkList, linkStyle, ulStyle } from "./contactLinks.scss";
 
 const links = [
   {
