@@ -1,4 +1,4 @@
-import "./mainScene.scss";
+import './mainScene.scss';
 
 export default ({
   initialCameraPos = [-25, 100, 300],
@@ -7,8 +7,8 @@ export default ({
 } = {}) => {
   global.TweenMax = global.gsap;
 
-  var textureFile = "images/dotTexture.png";
-  var canvas = document.querySelector("#renderScene");
+  var textureFile = 'images/dotTexture.png';
+  var canvas = document.querySelector('#renderScene');
   var width = canvas.offsetWidth,
     height = canvas.offsetHeight;
 
@@ -28,8 +28,8 @@ export default ({
   renderer.setClearColor(
     parseInt(
       getComputedStyle(document.body)
-        .getPropertyValue("--color-backgroud-0")
-        .replace(/#/, "0x")
+        .getPropertyValue('--color-backgroud-0')
+        .replace(/#/, '0x')
     )
   );
 
@@ -46,7 +46,7 @@ export default ({
 
   // Create dots
   var loader = new THREE.TextureLoader();
-  loader.crossOrigin = "";
+  loader.crossOrigin = '';
   var dotTexture = loader.load(textureFile);
   var dotsAmount = 3000;
   var dotsGeometry = new THREE.Geometry();
@@ -99,11 +99,11 @@ export default ({
 
   var bufferWrapGeom = new THREE.BufferGeometry();
   var attributePositions = new THREE.BufferAttribute(positions, 3);
-  bufferWrapGeom.setAttribute("position", attributePositions);
+  bufferWrapGeom.setAttribute('position', attributePositions);
   var attributeSizes = new THREE.BufferAttribute(sizes, 1);
-  bufferWrapGeom.setAttribute("size", attributeSizes);
+  bufferWrapGeom.setAttribute('size', attributeSizes);
   var attributeColors = new THREE.BufferAttribute(colorsAttribute, 3);
-  bufferWrapGeom.setAttribute("color", attributeColors);
+  bufferWrapGeom.setAttribute('color', attributeColors);
   var shaderMaterial = new THREE.ShaderMaterial({
     uniforms: {
       texture: {
@@ -206,8 +206,8 @@ void main(){
   }
 
   function onResize() {
-    canvas.style.width = "";
-    canvas.style.height = "";
+    canvas.style.width = '';
+    canvas.style.height = '';
     width = canvas.offsetWidth;
     height = canvas.offsetHeight;
     camera.aspect = width / height;
@@ -224,20 +224,20 @@ void main(){
 
   TweenMax.ticker.add(render);
   TweenMax.ticker.fps(40);
-  window.addEventListener("mousemove", onMouseMove);
+  window.addEventListener('mousemove', onMouseMove);
   var resizeTm;
-  window.addEventListener("resize", function () {
+  window.addEventListener('resize', function () {
     resizeTm = clearTimeout(resizeTm);
     resizeTm = setTimeout(onResize, 200);
   });
 
   setTimeout(() => {
-    TweenMax.to("#renderScene", { opacity: 1, duration: duration / 3 });
+    TweenMax.to('#renderScene', { opacity: 1, duration: duration / 3 });
     const cameraPos = initialCameraPos.concat();
     TweenMax.to(cameraPos, {
       ...targetCameraPos,
       duration,
-      ease: "power4.out",
+      ease: 'power4.out',
       onUpdate: () => camera.position.set(...cameraPos),
     });
   }, 0);

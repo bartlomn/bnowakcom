@@ -1,9 +1,9 @@
-import { interpolate } from "react-spring";
-import HeaderComponent from "./../header";
-import IntroductionComponent from "./../introduction";
-import ContactLinks from "./../contactlinks";
-import renderScene from "./../threejs/mainScene";
-import { useHeaderSpring, useIntroSpring, useContactSpring } from "./springs";
+import { interpolate } from 'react-spring';
+import HeaderComponent from './../header';
+import IntroductionComponent from './../introduction';
+import ContactLinks from './../contactlinks';
+import renderScene from './../threejs/mainScene';
+import { useHeaderSpring, useIntroSpring, useContactSpring } from './springs';
 
 const config = {
   mass: 1,

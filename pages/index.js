@@ -1,4 +1,4 @@
-import Home from "./../components/home"
+import Home from './../components/home';
 
 const staticContent = () => (
   <>
@@ -21,12 +21,11 @@ const staticContent = () => (
         </li>
 
         <br />
-
       </ul>
     </section>
   </>
 );
 
-const Page = () => <Home/>
+const Page = () => <Home />;
 
 export default Page;

@@ -1,5 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import SystemHead from "./../components/document/head";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import SystemHead from './../components/document/head';
 
 export default class MyDocument extends Document {
   render() {

@@ -5,7 +5,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "prettify": "yarn prettier --write ./**/*.js"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -28,6 +29,7 @@
     "extracted-loader": "^1.0.7",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.5",
     "sass-loader": "^8.0.2",
     "webpack": "^4.43.0"
   }

@@ -78,6 +78,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:6.7.0"
       ],
       [
+        "prettier",
+        "npm:2.0.5"
+      ],
+      [
         "react",
         "npm:16.13.1"
       ],
@@ -129,6 +133,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nord", "npm:0.2.1"],
             ["postcss-loader", "npm:3.0.0"],
             ["postcss-preset-env", "npm:6.7.0"],
+            ["prettier", "npm:2.0.5"],
             ["react", "npm:16.13.1"],
             ["react-dom", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:16.13.1"],
             ["react-responsive", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.3"],
@@ -2596,6 +2601,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nord", "npm:0.2.1"],
             ["postcss-loader", "npm:3.0.0"],
             ["postcss-preset-env", "npm:6.7.0"],
+            ["prettier", "npm:2.0.5"],
             ["react", "npm:16.13.1"],
             ["react-dom", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:16.13.1"],
             ["react-responsive", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.3"],
@@ -8581,6 +8587,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prepend-http-npm-1.0.4-cd78a41247-3.zip/node_modules/prepend-http/",
           "packageDependencies": [
             ["prepend-http", "npm:1.0.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["prettier", [
+        ["npm:2.0.5", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.0.5-f0ee4e15ce-3.zip/node_modules/prettier/",
+          "packageDependencies": [
+            ["prettier", "npm:2.0.5"]
           ],
           "linkType": "HARD",
         }]

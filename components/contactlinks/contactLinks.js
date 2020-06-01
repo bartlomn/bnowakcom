@@ -1,27 +1,27 @@
-import { animated } from "react-spring";
-import { linkList, linkStyle, ulStyle } from "./contactLinks.scss";
+import { animated } from 'react-spring';
+import { linkList, linkStyle, ulStyle } from './contactLinks.scss';
 
 const links = [
   {
-    href: "mailto:hibart@bart.rocks",
-    title: "email",
-    text: "hibart@bart.rocks",
+    href: 'mailto:hibart@bart.rocks',
+    title: 'email',
+    text: 'hibart@bart.rocks',
   },
   {
-    href: "http://www.linkedin.com/in/bartlomn",
-    title: "LinkedIn profile",
-    text: "LinkedIn",
+    href: 'http://www.linkedin.com/in/bartlomn',
+    title: 'LinkedIn profile',
+    text: 'LinkedIn',
   },
   {
-    href: "https://github.com/bartlomn",
-    title: "GitHub profile",
-    text: "GitHub",
+    href: 'https://github.com/bartlomn',
+    title: 'GitHub profile',
+    text: 'GitHub',
   },
-//   {
-//     href: "https://twitter.com/bartlomn",
-//     title: "Twitter profile",
-//     text: "Twitter",
-//   },
+  //   {
+  //     href: "https://twitter.com/bartlomn",
+  //     title: "Twitter profile",
+  //     text: "Twitter",
+  //   },
 ];
 
 const ContactLinks = ({ style }) => {

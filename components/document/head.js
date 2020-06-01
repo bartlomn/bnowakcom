@@ -1,16 +1,16 @@
 const keywords = [
-  "web",
-  "applications",
-  "engineering",
-  " front-end",
-  "react",
-  "vue",
-  "devops",
-  "cloudops",
-  "architecture",
-  "microservices",
-  "bart",
-  "nowak",
+  'web',
+  'applications',
+  'engineering',
+  ' front-end',
+  'react',
+  'vue',
+  'devops',
+  'cloudops',
+  'architecture',
+  'microservices',
+  'bart',
+  'nowak',
 ];
 
 const customHead = () => (
@@ -23,7 +23,7 @@ const customHead = () => (
       name="description"
       content="bart.rocks => the online front of Bart Nowak"
     />
-    <meta name="keywords" content={ keywords.join(', ') } />
+    <meta name="keywords" content={keywords.join(', ')} />
     <meta name="author" content="Bart Nowak" />
     <meta
       name="viewport"

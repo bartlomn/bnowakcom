@@ -1,3 +1,3 @@
-import ContactLinks from "./contactLinks";
+import ContactLinks from './contactLinks';
 
 export default ContactLinks;

@@ -1,3 +1,3 @@
-import introduction from "./introduction";
+import introduction from './introduction';
 
 export default introduction;

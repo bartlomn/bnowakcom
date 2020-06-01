@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { useSpring } from "react-spring";
+import { useRef } from 'react';
+import { useSpring } from 'react-spring';
 
 const common = {
   from: {

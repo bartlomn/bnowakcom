@@ -1,5 +1,5 @@
-import { animated, useChain } from "react-spring";
-import { useMediaQuery } from "react-responsive";
+import { animated, useChain } from 'react-spring';
+import { useMediaQuery } from 'react-responsive';
 
 import {
   useGreetingSpring,
@@ -7,7 +7,7 @@ import {
   useHeroSpring,
   useHeroDotSpring,
   useHeadlineSpring,
-} from "./springs";
+} from './springs';
 
 import {
   container,
@@ -16,7 +16,7 @@ import {
   heroDot,
   heroOverlay,
   headline,
-} from "./header.scss";
+} from './header.scss';
 
 const config = {
   mass: 1,
@@ -60,7 +60,7 @@ const Headline = ({ style } = {}) => (
 
 const Header = ({ headerStyle, onAnimationEnd = () => null } = {}) => {
   const isPortrait = useMediaQuery({
-    query: "(orientation: portrait) and (max-width: 639px)",
+    query: '(orientation: portrait) and (max-width: 639px)',
   });
 
   const [greetingAnimation, greetingRef] = useGreetingSpring({ config });
