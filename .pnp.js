@@ -30,6 +30,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "fallbackPool": [
       [
+        "@yarnpkg/fslib",
+        "npm:2.0.0-rc.20"
+      ],
+      [
+        "@zeit/next-css",
+        "npm:1.0.1"
+      ],
+      [
         "@zeit/next-sass",
         "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:1.0.1"
       ],
@@ -56,6 +64,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [
         "gray-matter",
         "npm:4.0.2"
+      ],
+      [
+        "include-media",
+        "npm:1.4.9"
       ],
       [
         "next",
@@ -121,6 +133,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@yarnpkg/fslib", "npm:2.0.0-rc.20"],
+            ["@zeit/next-css", "npm:1.0.1"],
             ["@zeit/next-sass", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:1.0.1"],
             ["chalk", "npm:4.0.0"],
             ["classnames", "npm:2.2.6"],
@@ -128,6 +142,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:8.2.0"],
             ["extracted-loader", "npm:1.0.7"],
             ["gray-matter", "npm:4.0.2"],
+            ["include-media", "npm:1.4.9"],
             ["next", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:9.4.2"],
             ["node-sass", "npm:4.14.1"],
             ["nord", "npm:0.2.1"],
@@ -1727,6 +1742,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/emscripten", [
+        ["npm:1.39.4", {
+          "packageLocation": "./.yarn/cache/@types-emscripten-npm-1.39.4-4d03380faa-3.zip/node_modules/@types/emscripten/",
+          "packageDependencies": [
+            ["@types/emscripten", "npm:1.39.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/q", [
         ["npm:1.5.4", {
           "packageLocation": "./.yarn/cache/@types-q-npm-1.5.4-af8ca8cb0d-3.zip/node_modules/@types/q/",
@@ -1964,6 +1988,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@xtuc-long-npm-4.2.2-37236e6d72-3.zip/node_modules/@xtuc/long/",
           "packageDependencies": [
             ["@xtuc/long", "npm:4.2.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@yarnpkg/fslib", [
+        ["npm:2.0.0-rc.20", {
+          "packageLocation": "./.yarn/cache/@yarnpkg-fslib-npm-2.0.0-rc.20-f4d383882d-3.zip/node_modules/@yarnpkg/fslib/",
+          "packageDependencies": [
+            ["@yarnpkg/fslib", "npm:2.0.0-rc.20"],
+            ["@yarnpkg/libzip", "npm:2.0.0-rc.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@yarnpkg/libzip", [
+        ["npm:2.0.0-rc.11", {
+          "packageLocation": "./.yarn/cache/@yarnpkg-libzip-npm-2.0.0-rc.11-d051dcf84e-3.zip/node_modules/@yarnpkg/libzip/",
+          "packageDependencies": [
+            ["@yarnpkg/libzip", "npm:2.0.0-rc.11"],
+            ["@types/emscripten", "npm:1.39.4"]
           ],
           "linkType": "HARD",
         }]
@@ -2589,6 +2633,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["bnowakcom", "workspace:."],
+            ["@yarnpkg/fslib", "npm:2.0.0-rc.20"],
+            ["@zeit/next-css", "npm:1.0.1"],
             ["@zeit/next-sass", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:1.0.1"],
             ["chalk", "npm:4.0.0"],
             ["classnames", "npm:2.2.6"],
@@ -2596,6 +2642,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:8.2.0"],
             ["extracted-loader", "npm:1.0.7"],
             ["gray-matter", "npm:4.0.2"],
+            ["include-media", "npm:1.4.9"],
             ["next", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:9.4.2"],
             ["node-sass", "npm:4.14.1"],
             ["nord", "npm:0.2.1"],
@@ -5352,6 +5399,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/in-publish-npm-2.0.1-5a970fa809-3.zip/node_modules/in-publish/",
           "packageDependencies": [
             ["in-publish", "npm:2.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["include-media", [
+        ["npm:1.4.9", {
+          "packageLocation": "./.yarn/unplugged/include-media-npm-1.4.9-9134ff912d/node_modules/include-media/",
+          "packageDependencies": [
+            ["include-media", "npm:1.4.9"]
           ],
           "linkType": "HARD",
         }]
@@ -8593,7 +8649,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["prettier", [
         ["npm:2.0.5", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.0.5-f0ee4e15ce-3.zip/node_modules/prettier/",
+          "packageLocation": "./.yarn/unplugged/prettier-npm-2.0.5-f0ee4e15ce/node_modules/prettier/",
           "packageDependencies": [
             ["prettier", "npm:2.0.5"]
           ],

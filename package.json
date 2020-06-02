@@ -9,6 +9,7 @@
     "prettify": "yarn prettier --write ./**/*.js"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "classnames": "^2.2.6",
     "date-fns": "^2.14.0",
@@ -24,13 +25,23 @@
     "remark-html": "^11.0.2"
   },
   "devDependencies": {
+    "@yarnpkg/fslib": "^2.0.0-rc.20",
     "chalk": "^4.0.0",
     "dotenv": "^8.2.0",
     "extracted-loader": "^1.0.7",
+    "include-media": "^1.4.9",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.5",
     "sass-loader": "^8.0.2",
     "webpack": "^4.43.0"
+  },
+  "dependenciesMeta": {
+    "include-media": {
+      "unplugged": true
+    },
+    "prettier": {
+      "unplugged": true
+    }
   }
 }

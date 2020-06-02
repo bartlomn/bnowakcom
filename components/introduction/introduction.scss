@@ -1,10 +1,10 @@
-@media (orientation: portrait) and (max-width: 639px) {
-  .intro {
-    margin-block-start: 7rem;
-  }
-}
+@import './../../styles/media';
+
 .intro {
   max-width: 41rem;
+  @include media('<M', 'portrait') {
+    margin-block-start: 7rem;
+  }
 }
 
 .introText {

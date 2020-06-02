@@ -1,0 +1,14 @@
+@import './../styles/media';
+
+.app {
+  padding: 3rem;
+  @include media('>=M', '<L') {
+    padding: 4rem;
+  }
+  @include media('>=L', '<XL') {
+    padding: 5rem;
+  }
+  @include media('>=XL') {
+    padding: 6rem;
+  }
+}
