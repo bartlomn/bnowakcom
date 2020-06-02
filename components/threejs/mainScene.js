@@ -232,7 +232,7 @@ void main(){
   });
 
   setTimeout(() => {
-    TweenMax.to('#renderScene', { opacity: 1, duration: duration / 3 });
+    TweenMax.to('#renderScene', { opacity: 1, duration: duration / 2 });
     const cameraPos = initialCameraPos.concat();
     TweenMax.to(cameraPos, {
       ...targetCameraPos,

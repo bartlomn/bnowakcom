@@ -1,16 +1,18 @@
 @import './../../styles/media';
 
 .intro {
-  max-width: 41rem;
-  @include media('<M', 'portrait') {
-    margin-block-start: 7rem;
-  }
+  max-width: 33rem;
+  position: absolute;
+  top: 21.5rem;
 }
 
 .introText {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: justify;
-  font-weight: 200;
+  font-weight: 300;
+  @include media('<M', 'portrait') {
+    min-width: 30rem;
+  }
 }
 
 .hrule {

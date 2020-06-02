@@ -7,7 +7,7 @@ const Introduction = ({ style } = {}) => {
     <animated.section className={intro} style={style}>
       <hr className={hrule} />
       <p className={introText}>
-        It was around year 1999 that I had been first asked to build a website.
+        It was around year 1999 that I had been first asked to build a website.<br/>
         Ever since then, I have been helping to deliver digital products and
         services across multitude of domains.
         <br />

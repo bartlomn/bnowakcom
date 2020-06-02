@@ -14,9 +14,9 @@ const config = {
 const Home = () => {
   const onRest = () => {
     renderScene({
-      initialCameraPos: [-30, 100, 300],
-      targetCameraPos: [-50, 100, 175],
-      duration: 15,
+      initialCameraPos: [30, 160, 550],
+      targetCameraPos: [-100 + window.innerWidth / 10, 130, 175], // 32
+      duration: 10,
     });
   };
   const [{ y: headerPos }, headerRef] = useHeaderSpring({ config });

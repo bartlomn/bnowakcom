@@ -1,5 +1,5 @@
 import { animated } from 'react-spring';
-import { linkList, linkStyle, ulStyle } from './contactLinks.scss';
+import { linkList, linkStyle, ulStyle, section } from './contactLinks.scss';
 
 const links = [
   {
@@ -26,14 +26,14 @@ const links = [
 
 const ContactLinks = ({ style }) => {
   return (
-    <animated.section style={style}>
+    <animated.section style={style} className={section}>
       <ul className={linkList}>
         {links.map(({ href, title, text }) => (
-          <ul key={href} className={ulStyle}>
+          <li key={href} className={ulStyle}>
             <a href={href} title={title} className={linkStyle}>
               {text}
             </a>
-          </ul>
+          </li>
         ))}
       </ul>
     </animated.section>

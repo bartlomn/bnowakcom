@@ -3,8 +3,8 @@
 
 html {
   font-size: 8px;
-  @include media('>=S', '<M') {
-    font-size: 10px;
+  @include media('>=S') {
+    font-size: 12px;
   }
   @include media('>=M', '<L') {
     padding: 14px;

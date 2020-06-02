@@ -69,19 +69,19 @@ export const useHeroDotSpring = ({ config }) => {
   ];
 };
 
-export const useHeadlineSpring = ({ config, isPortrait, onRest }) => {
+export const useHeadlineSpring = ({ config, isMultiline, onRest }) => {
   const ref = useRef();
   return [
     useSpring({
       config,
       ref,
       from: {
-        transform: `translate3d(0, ${isPortrait ? 7 : 4}rem, 0)`,
+        transform: `translate3d(0, ${isMultiline ? 7 : 4}rem, 0)`,
         opacity: 0,
       },
       to: [
         {
-          transform: `translate3d(0, ${isPortrait ? 5 : 0}rem, 0)`,
+          transform: `translate3d(0, ${isMultiline ? 5 : 0}rem, 0)`,
           opacity: 1,
         },
       ],

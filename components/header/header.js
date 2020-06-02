@@ -59,9 +59,9 @@ const Headline = ({ style } = {}) => (
 );
 
 const Header = ({ headerStyle, onAnimationEnd = () => null } = {}) => {
-  const isPortrait = useMediaQuery({
-    query: '(orientation: portrait) and (max-width: 639px)',
-  });
+  // const isMultiline = useMediaQuery({
+  //   query: '(max-width: 639px)',
+  // });
 
   const [greetingAnimation, greetingRef] = useGreetingSpring({ config });
   const [overlayAnimation, overlayRef] = useOverlaySpring({ config });
@@ -69,7 +69,7 @@ const Header = ({ headerStyle, onAnimationEnd = () => null } = {}) => {
   const [heroDotAnimation, heroDotRef] = useHeroDotSpring({ config });
   const [headlineAnimation, headlineRef] = useHeadlineSpring({
     config,
-    isPortrait,
+    isMultiline : true,
     onRest: onAnimationEnd,
   });
 

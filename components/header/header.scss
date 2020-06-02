@@ -11,6 +11,7 @@
   mix-blend-mode: multiply;
   font-size: 10rem;
   font-weight: 900;
+  white-space: nowrap;
 }
 
 .hero,
@@ -19,6 +20,7 @@
   color: var(--color-accent-0);
   mix-blend-mode: multiply;
   font-size: 6rem;
+  white-space: nowrap;
 }
 
 .hero {
@@ -39,13 +41,13 @@
 .headline {
   position: absolute;
   color: var(--color-foregroung-1);
-  font-size: 1.5rem;
-  font-weight: 300;
-  bottom: 0;
-  @include media('<M', 'portrait') {
-    max-width: 16rem;
-  }
-  @include media('>=M', '<L') {
-    white-space: nowrap;
+  font-size: 2.5rem;
+  font-weight: 200;
+  bottom: -4rem;
+  width: 24rem;
+  @include media('>=M') {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    bottom: -2rem;
   }
 }
