@@ -4,30 +4,31 @@ $breakpoints: (
   XS: 320px,
   S: 480px,
   M: 640px,
+  iPad: 768px,
   L: 1024px,
   XL: 1280px,
 );
 
-:root {
-  --bp-width: 'XS';  
-  @include media('>=S', '<M') {
-    --bp-width: 'S';
-  }
-  @include media('>=M', '<L') {
-    --bp-width: 'M';
-  }
-  @include media('>=L', '<XL') {
-    --bp-width: 'L';
-  }
-  @include media('>=XL') {
-    --bp-width: 'XL';
-  }
+// :root {
+//   --bp-width: 'XS';
+//   @include media('>=S', '<M') {
+//     --bp-width: 'S';
+//   }
+//   @include media('>=M', '<L') {
+//     --bp-width: 'M';
+//   }
+//   @include media('>=L', '<XL') {
+//     --bp-width: 'L';
+//   }
+//   @include media('>=XL') {
+//     --bp-width: 'XL';
+//   }
 
-  --bp-orientation: '';
-  @include media('portrait') {
-    --bp-orientation: 'portrait';
-  }
-  @include media('landscape') {
-    --bp-orientation: 'landscape';
-  }
-}
+//   --bp-orientation: '';
+//   @include media('portrait') {
+//     --bp-orientation: 'portrait';
+//   }
+//   @include media('landscape') {
+//     --bp-orientation: 'landscape';
+//   }
+// }

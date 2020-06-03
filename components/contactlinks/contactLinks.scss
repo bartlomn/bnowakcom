@@ -11,7 +11,7 @@
   line-height: 3.5rem;
   padding-block-end: 7rem;
 
-  @include media('>=M') {
+  @include media('>iPad') {
     line-height: 3rem;
     padding-block-end: 15rem;
   }
@@ -23,7 +23,7 @@
 
 .linkStyle {
   color: #5e81ac;
-  font-family: monospace;
+  font-family: Monaco, monospace;
   font-weight: 200;
   text-transform: lowercase;
   font-size: 1.75rem;

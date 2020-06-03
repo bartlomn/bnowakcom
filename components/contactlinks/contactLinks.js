@@ -3,9 +3,9 @@ import { linkList, linkStyle, ulStyle, section } from './contactLinks.scss';
 
 const links = [
   {
-    href: 'mailto:hibart@bart.rocks',
+    href: 'mailto:hi@bart.rocks',
     title: 'email',
-    text: 'hibart@bart.rocks',
+    text: 'hi@bart.rocks',
   },
   {
     href: 'http://www.linkedin.com/in/bartlomn',
