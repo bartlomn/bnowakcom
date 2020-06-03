@@ -2,15 +2,16 @@
 
 .intro {
   max-width: 33rem;
-  position: absolute;
-  top: 21.5rem;
+  @include media('>=M') {
+    max-width: 53rem;
+  }
 }
 
 .introText {
   font-size: 1.5rem;
   text-align: justify;
   font-weight: 300;
-  @include media('<M', 'portrait') {
+  @include media('<M') {
     min-width: 30rem;
   }
 }

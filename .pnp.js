@@ -102,10 +102,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:16.13.1"
       ],
       [
-        "react-responsive",
-        "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.3"
-      ],
-      [
         "react-spring",
         "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.27"
       ],
@@ -151,7 +147,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["react", "npm:16.13.1"],
             ["react-dom", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:16.13.1"],
-            ["react-responsive", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.3"],
             ["react-spring", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.27"],
             ["remark", "npm:12.0.0"],
             ["remark-html", "npm:11.0.2"],
@@ -2651,7 +2646,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["react", "npm:16.13.1"],
             ["react-dom", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:16.13.1"],
-            ["react-responsive", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.3"],
             ["react-spring", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.27"],
             ["remark", "npm:12.0.0"],
             ["remark-html", "npm:11.0.2"],
@@ -3676,15 +3670,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "packagePeers": [
             "webpack"
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["css-mediaquery", [
-        ["npm:0.1.2", {
-          "packageLocation": "./.yarn/cache/css-mediaquery-npm-0.1.2-39b61fbcad-3.zip/node_modules/css-mediaquery/",
-          "packageDependencies": [
-            ["css-mediaquery", "npm:0.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -5291,15 +5276,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["hyphenate-style-name", [
-        ["npm:1.0.3", {
-          "packageLocation": "./.yarn/cache/hyphenate-style-name-npm-1.0.3-d3c1c61aed-3.zip/node_modules/hyphenate-style-name/",
-          "packageDependencies": [
-            ["hyphenate-style-name", "npm:1.0.3"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["icss-replace-symbols", [
         ["npm:1.1.0", {
           "packageLocation": "./.yarn/cache/icss-replace-symbols-npm-1.1.0-bc11c612de-3.zip/node_modules/icss-replace-symbols/",
@@ -6441,16 +6417,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["markdown-table", "npm:2.0.0"],
             ["repeat-string", "npm:1.6.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["matchmediaquery", [
-        ["npm:0.3.1", {
-          "packageLocation": "./.yarn/cache/matchmediaquery-npm-0.3.1-17c8857eb5-3.zip/node_modules/matchmediaquery/",
-          "packageDependencies": [
-            ["matchmediaquery", "npm:0.3.1"],
-            ["css-mediaquery", "npm:0.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -8938,23 +8904,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["react-responsive", [
-        ["virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.3", {
-          "packageLocation": "./.yarn/$$virtual/react-responsive-virtual-8d7850d3a9/0/cache/react-responsive-npm-8.0.3-a058de1dfa-3.zip/node_modules/react-responsive/",
-          "packageDependencies": [
-            ["react-responsive", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.3"],
-            ["hyphenate-style-name", "npm:1.0.3"],
-            ["matchmediaquery", "npm:0.3.1"],
-            ["prop-types", "npm:15.7.2"],
-            ["react", "npm:16.13.1"],
-            ["shallow-equal", "npm:1.2.1"]
-          ],
-          "packagePeers": [
-            "react"
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["react-spring", [
         ["virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.27", {
           "packageLocation": "./.yarn/$$virtual/react-spring-virtual-0878a43c85/0/cache/react-spring-npm-8.0.27-e2e99c79a8-3.zip/node_modules/react-spring/",
@@ -9718,15 +9667,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["shallow-clone", "npm:3.0.1"],
             ["kind-of", "npm:6.0.3"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["shallow-equal", [
-        ["npm:1.2.1", {
-          "packageLocation": "./.yarn/cache/shallow-equal-npm-1.2.1-518a76643b-3.zip/node_modules/shallow-equal/",
-          "packageDependencies": [
-            ["shallow-equal", "npm:1.2.1"]
           ],
           "linkType": "HARD",
         }]

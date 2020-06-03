@@ -2125,7 +2125,6 @@ __metadata:
     prettier: ^2.0.5
     react: ^16.13.1
     react-dom: ^16.13.1
-    react-responsive: ^8.0.3
     react-spring: ^8.0.27
     remark: ^12.0.0
     remark-html: ^11.0.2
@@ -3051,13 +3050,6 @@ __metadata:
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
   checksum: 3/910936f0ac772d0160118ba4b364c28b9946d94a385b1df914954697a7d070d6a8c77ed94757ae3b3e4667de917ece796652334ad58e2b34f35744c0740e33aa
-  languageName: node
-  linkType: hard
-
-"css-mediaquery@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "css-mediaquery@npm:0.1.2"
-  checksum: 3/571ab2efdba0dead1315eb82b1e53917b4aeb45f07cc2ff97bfe3c6443cd036843d944044661561b5585d1f64ecbcad112052b40846ae4d85ef7d5e978e996e4
   languageName: node
   linkType: hard
 
@@ -4526,13 +4518,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"hyphenate-style-name@npm:^1.0.0":
-  version: 1.0.3
-  resolution: "hyphenate-style-name@npm:1.0.3"
-  checksum: 3/3ec167a398a992183dad59a73a0379d057799a56811469ef6e15aaf68313e80c173ed4d504f8f5babf089846136c9c1ea5ac42c25bf38b269f5c361430f062bc
-  languageName: node
-  linkType: hard
-
 "icss-replace-symbols@npm:^1.1.0":
   version: 1.1.0
   resolution: "icss-replace-symbols@npm:1.1.0"
@@ -5556,15 +5541,6 @@ fsevents@~2.1.2:
   dependencies:
     repeat-string: ^1.0.0
   checksum: 3/48492b01bc27eab584b7e07d0a0ba5eef2e94017e7c0a781e0525cd908e44a8b224120217f32e28676184c4f0f93f2c7a2178cf3341c6503dd9b0eb8f409b72f
-  languageName: node
-  linkType: hard
-
-"matchmediaquery@npm:^0.3.0":
-  version: 0.3.1
-  resolution: "matchmediaquery@npm:0.3.1"
-  dependencies:
-    css-mediaquery: ^0.1.2
-  checksum: 3/face426fe3fd743d08d70c2e92c103c14419268f7ba0069bacd04c91e819a7ca270d195e2e6793169a6fcacc22b225965d685ec3fc144babee84f46659645757
   languageName: node
   linkType: hard
 
@@ -7633,7 +7609,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.7.2, prop-types@npm:^15.5.8, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2":
+"prop-types@npm:15.7.2, prop-types@npm:^15.5.8, prop-types@npm:^15.6.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -7822,20 +7798,6 @@ fsevents@~2.1.2:
   version: 0.8.2
   resolution: "react-refresh@npm:0.8.2"
   checksum: 3/8d9385ceaa4170bc37839f8d7c9f81ac6323c0ede1aa054113b88be96125bd57ca947d6dfe422b7f0122450c93282828d9fb9465ee2a8d4c6ae48538e6774ee3
-  languageName: node
-  linkType: hard
-
-"react-responsive@npm:^8.0.3":
-  version: 8.0.3
-  resolution: "react-responsive@npm:8.0.3"
-  dependencies:
-    hyphenate-style-name: ^1.0.0
-    matchmediaquery: ^0.3.0
-    prop-types: ^15.6.1
-    shallow-equal: ^1.1.0
-  peerDependencies:
-    react: ^16.8.0
-  checksum: 3/27a2d850793872177e84900027b9f86ce4e9c7aa944c009af4e07a588aad085a17a8244f47aedc658ebf6c2f29147d7ce5639b23954f9d57a216f3474c04c2ef
   languageName: node
   linkType: hard
 
@@ -8537,13 +8499,6 @@ fsevents@~2.1.2:
   dependencies:
     kind-of: ^6.0.2
   checksum: 3/e329e054c286f0681fd8a9e5c353999519332f12510a99e189ea9cfa0337adb6f1414639d44493418ef6790a693b78c354525269f5db25a9feddd8b4d7891a62
-  languageName: node
-  linkType: hard
-
-"shallow-equal@npm:^1.1.0":
-  version: 1.2.1
-  resolution: "shallow-equal@npm:1.2.1"
-  checksum: 3/5002ac4a3639e35782d3cb21073d48e1e4f85321cc54608f48b2331f6db6d54e4f4b44ed81ec4d75385ebe893e8286752b1e29595381e6adad72dd836f001b7f
   languageName: node
   linkType: hard
 

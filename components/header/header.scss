@@ -1,7 +1,6 @@
 @import './../../styles/media';
 
 .container {
-  height: 10rem;
   position: relative;
 }
 
@@ -16,7 +15,7 @@
 
 .hero,
 .heroDot {
-  position: absolute;
+  display: inline;
   color: var(--color-accent-0);
   mix-blend-mode: multiply;
   font-size: 6rem;
@@ -24,11 +23,12 @@
 }
 
 .hero {
-  transform: translate3d(-4px, 0, 0);
+  margin-left: -4px;
 }
 
 .heroDot {
   display: inline;
+  position: absolute;
 }
 
 .heroOverlay {
@@ -39,15 +39,13 @@
 }
 
 .headline {
-  position: absolute;
   color: var(--color-foregroung-1);
   font-size: 2.5rem;
   font-weight: 200;
-  bottom: -4rem;
   width: 24rem;
   @include media('>=M') {
-    font-size: 2.25rem;
+    width: unset;
+    font-size: 2rem;
     line-height: 3rem;
-    bottom: -2rem;
   }
 }

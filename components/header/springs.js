@@ -23,10 +23,10 @@ export const useOverlaySpring = ({ config }) => {
         friction: 30,
       },
       ref,
-      from: { transform: 'translate3d(-56.5rem, 0, 0)', width: '40rem' },
+      from: { transform: 'translate3d(-56.5rem, -9rem, 0)', width: '40rem' },
       to: [
-        { transform: 'translate3d(-6.5rem, 0, 0)', width: '40rem' },
-        { transform: 'translate3d(33.5rem, 0, 0)', width: '0rem' },
+        { transform: 'translate3d(-6.5rem, -9rem, 0)', width: '40rem' },
+        { transform: 'translate3d(33.5rem, -9rem, 0)', width: '0rem' },
       ],
     }),
     ref,
@@ -62,26 +62,26 @@ export const useHeroDotSpring = ({ config }) => {
         friction: 10,
       },
       ref,
-      from: { transform: 'translate3d(31.25rem, 3rem, 0) scale3d(0, 0, 1)' },
-      to: [{ transform: 'translate3d(31.25rem, 0, 0) scale3d(1, 1, 1)' }],
+      from: { transform: 'translate3d(0, 3rem, 0) scale3d(0, 0, 1)' },
+      to: [{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1)' }],
     }),
     ref,
   ];
 };
 
-export const useHeadlineSpring = ({ config, isMultiline, onRest }) => {
+export const useHeadlineSpring = ({ config, onRest }) => {
   const ref = useRef();
   return [
     useSpring({
       config,
       ref,
       from: {
-        transform: `translate3d(0, ${isMultiline ? 7 : 4}rem, 0)`,
+        transform: `translate3d(0, 4rem, 0)`,
         opacity: 0,
       },
       to: [
         {
-          transform: `translate3d(0, ${isMultiline ? 5 : 0}rem, 0)`,
+          transform: `translate3d(0, 0, 0)`,
           opacity: 1,
         },
       ],

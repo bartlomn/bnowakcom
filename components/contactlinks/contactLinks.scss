@@ -1,16 +1,10 @@
 @import './../../styles/media';
 
 .section {
-  position: relative;
-  top: 28rem;
-
-  @include media('>=M') {
-    top: 26rem;
-  }
+  display: block;
 }
 
 .linkList {
-  position: absolute;
   list-style-type: none;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -19,6 +13,7 @@
 
   @include media('>=M') {
     line-height: 3rem;
+    padding-block-end: 15rem;
   }
 }
 
@@ -37,6 +32,6 @@
   text-decoration-color: #5e81ac;
 
   @include media('>=M') {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }

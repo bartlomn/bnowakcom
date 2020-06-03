@@ -3,7 +3,7 @@ import { useSpring } from 'react-spring';
 
 const common = {
   from: {
-    y: 25,
+    y: 30,
   },
   to: [
     {

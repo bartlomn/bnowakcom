@@ -15,7 +15,11 @@ const Home = () => {
   const onRest = () => {
     renderScene({
       initialCameraPos: [30, 160, 550],
-      targetCameraPos: [-100 + window.innerWidth / 10, 130, 175], // 32
+      targetCameraPos: [
+        -100 + window.innerWidth / (window.innerWidth / 60),
+        130,
+        175,
+      ], // 32
       duration: 10,
     });
   };
