@@ -1,5 +1,24 @@
 import './mainScene.scss';
 
+let renderer, lastBackgroundColor;
+
+const getColorFromCSSProp = (propName = '--color-backgroud-0') =>
+  getComputedStyle(document.body).getPropertyValue(propName);
+
+export const updateRenderBgColor = () => {
+  const color = getColorFromCSSProp();
+  const tween = { color: lastBackgroundColor };
+  TweenMax.to(tween, {
+    color,
+    duration: 0.25,
+    // ease: 'power2.out',
+    onUpdate: () => {
+      renderer.setClearColor(tween.color);
+    },
+  });
+  lastBackgroundColor = color;
+};
+
 export default ({
   initialCameraPos = [-25, 100, 300],
   targetCameraPos = [-50, 100, 175],
@@ -19,19 +38,14 @@ export default ({
     new THREE.Color(0x8fbcbb),
   ];
 
-  var renderer = new THREE.WebGLRenderer({
+  renderer = new THREE.WebGLRenderer({
     canvas: canvas,
     antialias: true,
   });
   renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
   renderer.setSize(width, height);
-  renderer.setClearColor(
-    parseInt(
-      getComputedStyle(document.body)
-        .getPropertyValue('--color-backgroud-0')
-        .replace(/#/, '0x')
-    )
-  );
+  lastBackgroundColor = getColorFromCSSProp();
+  renderer.setClearColor(parseInt(lastBackgroundColor.replace(/#/, '0x')));
 
   var scene = new THREE.Scene();
 
@@ -223,7 +237,7 @@ void main(){
   }
 
   TweenMax.ticker.add(render);
-  TweenMax.ticker.fps(40);
+  TweenMax.ticker.fps(30);
   window.addEventListener('mousemove', onMouseMove);
   var resizeTm;
   window.addEventListener('resize', function () {
@@ -232,8 +246,10 @@ void main(){
   });
 
   setTimeout(() => {
-    TweenMax.to('#renderScene', { opacity: 1, duration: duration / 3 });
+    TweenMax.to('#renderScene', { opacity: 1, duration: duration / 5 });
+    TweenMax.to('#control-icons', { opacity: 1, duration: duration / 5 });
     const cameraPos = initialCameraPos.concat();
+    // https://greensock.com/docs/v2/Easing
     TweenMax.to(cameraPos, {
       ...targetCameraPos,
       duration,

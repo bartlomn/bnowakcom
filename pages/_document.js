@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import SystemHead from './../components/document/head';
+import { IconDefs } from './../components/icons/icons';
 
 export default class MyDocument extends Document {
   render() {
@@ -9,6 +10,7 @@ export default class MyDocument extends Document {
           <SystemHead />
         </Head>
         <body>
+          <IconDefs />
           <Main />
           <NextScript />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>

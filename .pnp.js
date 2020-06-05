@@ -70,6 +70,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:1.4.9"
       ],
       [
+        "js-cookie",
+        "npm:2.2.1"
+      ],
+      [
         "next",
         "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:9.4.2"
       ],
@@ -143,6 +147,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["extracted-loader", "npm:1.0.7"],
             ["gray-matter", "npm:4.0.2"],
             ["include-media", "npm:1.4.9"],
+            ["js-cookie", "npm:2.2.1"],
             ["next", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:9.4.2"],
             ["node-sass", "npm:4.14.1"],
             ["nord", "npm:0.2.1"],
@@ -2643,6 +2648,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["extracted-loader", "npm:1.0.7"],
             ["gray-matter", "npm:4.0.2"],
             ["include-media", "npm:1.4.9"],
+            ["js-cookie", "npm:2.2.1"],
             ["next", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:9.4.2"],
             ["node-sass", "npm:4.14.1"],
             ["nord", "npm:0.2.1"],
@@ -5972,6 +5978,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/js-base64-npm-2.5.2-484ce93e2f-3.zip/node_modules/js-base64/",
           "packageDependencies": [
             ["js-base64", "npm:2.5.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["js-cookie", [
+        ["npm:2.2.1", {
+          "packageLocation": "./.yarn/cache/js-cookie-npm-2.2.1-e879cd2148-3.zip/node_modules/js-cookie/",
+          "packageDependencies": [
+            ["js-cookie", "npm:2.2.1"]
           ],
           "linkType": "HARD",
         }]

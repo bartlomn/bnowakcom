@@ -1,4 +1,5 @@
 @import './../../styles/media';
+@import './../../styles/mixins';
 
 .container {
   position: relative;
@@ -7,6 +8,7 @@
 .greeting {
   position: absolute;
   color: var(--color-accent-1);
+  @include theme-transition();
   mix-blend-mode: multiply;
   font-size: 10rem;
   font-weight: 900;
@@ -17,7 +19,7 @@
 .heroDot {
   display: inline;
   color: var(--color-accent-0);
-  mix-blend-mode: multiply;
+  mix-blend-mode: var(--theme-blend-mode);
   font-size: 6rem;
   white-space: nowrap;
 }
@@ -40,6 +42,7 @@
 
 .headline {
   color: var(--color-foregroung-1);
+  @include theme-transition();
   font-size: 2.5rem;
   font-weight: 200;
   width: 24rem;

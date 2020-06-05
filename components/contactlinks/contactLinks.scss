@@ -1,4 +1,5 @@
 @import './../../styles/media';
+@import './../../styles/mixins';
 
 .section {
   display: block;
@@ -22,7 +23,8 @@
 }
 
 .linkStyle {
-  color: #5e81ac;
+  color: var(--color-accent-0);
+  @include theme-transition();
   font-family: Monaco, monospace;
   font-weight: 200;
   text-transform: lowercase;

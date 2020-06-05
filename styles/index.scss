@@ -1,5 +1,6 @@
 @import './customProps';
 @import './media';
+@import './mixins';
 
 html {
   font-size: 8px;
@@ -21,4 +22,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   color: var(--color-foregroung-0);
+  @include theme-transition(true);
 }

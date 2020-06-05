@@ -2117,6 +2117,7 @@ __metadata:
     extracted-loader: ^1.0.7
     gray-matter: ^4.0.2
     include-media: ^1.4.9
+    js-cookie: ^2.2.1
     next: ^9.4.2
     node-sass: ^4.14.1
     nord: ^0.2.1
@@ -5124,6 +5125,13 @@ fsevents@~2.1.2:
   version: 2.5.2
   resolution: "js-base64@npm:2.5.2"
   checksum: 3/98d28c9848cda1a46efbe84d845ea274c965bf64287c5f49607ef6e653b56cb21ad3f8be044bb358e181ddb14c6231c3a0cc6e3cde6b0f90815c91610e09e6d3
+  languageName: node
+  linkType: hard
+
+"js-cookie@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "js-cookie@npm:2.2.1"
+  checksum: 3/c110f78427cb7715f67c69df0b3430f7cf9dafb5ddb13014df171d4fb61ccda0b1caf9767412cde63cab4bad697a5d4ce83b0c2e7ec650ec9929ed70750d20ae
   languageName: node
   linkType: hard
 
