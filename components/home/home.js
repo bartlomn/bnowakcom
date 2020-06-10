@@ -1,8 +1,8 @@
-import { interpolate } from 'react-spring';
 import ControlIcons from './../icons';
 import HeaderComponent from './../header';
 import IntroductionComponent from './../introduction';
 import ContactLinks from './../contactlinks';
+import About from './../about';
 import renderScene from './../threejs/mainScene';
 import { useHeaderSpring, useIntroSpring, useContactSpring } from './springs';
 
@@ -58,6 +58,7 @@ const Home = () => {
           opacity: contactPos.interpolate((pos) => 1 - (pos * 4) / 100),
         }}
       />
+      <About />
       <ControlIcons />
     </>
   );

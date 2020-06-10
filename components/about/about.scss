@@ -1,0 +1,66 @@
+@import './../../styles/media';
+@import './../../styles/mixins';
+
+$transDuration: 0.5s;
+$transDelay: 0.55s;
+
+.aboutSection {
+  background-color: var(--color-accent-1);
+  transform: translate3d(0, 0, 0);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 10rem 4rem 10rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: clip-path $transDuration ease;
+
+  @include media('>=L') {
+    padding: 10rem 4rem 10rem 6.5rem;
+}
+
+  p {
+    text-align: justify;
+    font-size: 1.75rem;
+    font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+    width: 75vw;
+    margin-bottom: 1rem;
+
+    @include media('>=S') {
+        font-size: 1.25rem;
+    }
+    @include media('>=L') {
+        width: 55vw;
+    }
+  }
+}
+.sectionOpen {
+  clip-path: inset(0 0 0% 0);
+  transition-delay: $transDelay;
+}
+.sectionClosed {
+  clip-path: inset(0 0 100% 0);
+  transition-delay: 0;
+}
+
+.blockReveal {
+  background-color: var(--color-accent-0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  transition: height $transDuration ease;
+  overflow-y: scroll;
+}
+.revealOpen {
+  height: 100vh;
+  transition-delay: 0s;
+}
+.revealClosed {
+  height: 0vh;
+  transition-delay: $transDelay;
+}

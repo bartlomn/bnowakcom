@@ -1,7 +1,21 @@
 import { animated } from 'react-spring';
-import { linkList, linkStyle, listItemStyle, section } from './contactLinks.scss';
+import {
+  linkList,
+  linkStyle,
+  listItemStyle,
+  section,
+} from './contactLinks.scss';
 
 const links = [
+  {
+    href: '#',
+    title: 'about',
+    text: 'about',
+    onClick: (cb) => event => {
+      event.preventDefault();
+      cb(event);
+    },
+  },
   {
     href: 'mailto:hi@bart.rocks',
     title: 'email',
@@ -17,20 +31,21 @@ const links = [
     title: 'GitHub profile',
     text: 'GitHub',
   },
-  //   {
-  //     href: "https://twitter.com/bartlomn",
-  //     title: "Twitter profile",
-  //     text: "Twitter",
-  //   },
 ];
 
-const ContactLinks = ({ style }) => {
+const ContactLinks = ({ style, aboutCallback = () => null }) => {
   return (
     <animated.section style={style} className={section}>
       <ul className={linkList}>
-        {links.map(({ href, title, text }) => (
+        {links.map(({ href, title, text, onClick = () => null }) => (
           <li key={href} className={listItemStyle}>
-            <a href={href} title={title} className={linkStyle} data-text={text}>
+            <a
+              href={href}
+              title={title}
+              className={linkStyle}
+              data-text={text}
+              onClick={onClick(aboutCallback)}
+            >
               {text}
             </a>
           </li>
