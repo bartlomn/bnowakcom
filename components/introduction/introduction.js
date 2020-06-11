@@ -9,7 +9,7 @@ const Introduction = ({ style } = {}) => {
       <p className={introText}>
         It was around year 1999 that I had been first asked to build a website.<br/>
         Ever since then, I have been helping to deliver digital products and
-        services across multitude of domains.
+        services across a multitude of domains.
         <br />
       </p>
       <hr className={hrule} />

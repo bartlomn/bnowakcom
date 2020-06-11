@@ -246,13 +246,14 @@ void main(){
   });
 
   setTimeout(() => {
-    TweenMax.to('#renderScene', { opacity: 1, duration: duration / 5 });
-    TweenMax.to('#control-icons', { opacity: 1, duration: duration / 5 });
+    TweenMax.to('#renderScene', { opacity: 1, duration: duration / 4, delay: 0.5 });
+    TweenMax.to('#control-icons', { opacity: 1, duration: duration / 4 });
     const cameraPos = initialCameraPos.concat();
     // https://greensock.com/docs/v2/Easing
     TweenMax.to(cameraPos, {
       ...targetCameraPos,
       duration,
+      delay: 0.5,
       ease: 'power4.out',
       onUpdate: () => camera.position.set(...cameraPos),
     });

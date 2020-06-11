@@ -1,3 +1,4 @@
+import { createRef } from 'react';
 import ControlIcons from './../icons';
 import HeaderComponent from './../header';
 import IntroductionComponent from './../introduction';
@@ -28,6 +29,8 @@ const Home = () => {
   const [{ y: introPos }, introRef] = useIntroSpring({ config, onRest });
   const [{ y: contactPos }, contactRef] = useContactSpring({ config });
 
+  const aboutRef = createRef();
+
   return (
     <>
       <HeaderComponent
@@ -57,8 +60,9 @@ const Home = () => {
           ),
           opacity: contactPos.interpolate((pos) => 1 - (pos * 4) / 100),
         }}
+        aboutRef={aboutRef}
       />
-      <About />
+      <About ref={aboutRef} />
       <ControlIcons />
     </>
   );

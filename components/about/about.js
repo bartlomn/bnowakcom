@@ -1,5 +1,7 @@
 import cx from 'classnames';
+import { forwardRef, useImperativeHandle } from 'react';
 import { useEffect, useState } from 'react';
+import { IconArrowLeft } from './../icons/icons';
 
 import {
   aboutSection,
@@ -8,35 +10,32 @@ import {
   blockReveal,
   revealOpen,
   revealClosed,
+  backIcon,
+  backLabel,
+  backButton,
 } from './about.scss';
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   const [isVisible, setIsVisible] = useState(false);
-  const clickListener = (event) => {
-    if (event.target.localName === 'use' || event.target.localName === 'svg') return;
-    const vis =
-      event.target.innerText === 'about' && event.target.localName === 'a';
-    setIsVisible(vis);
-    document.querySelector('body').style.cssText = `overflow-y: ${
-      vis ? 'hidden' : 'auto'
-    }`;
-  };
-  useEffect(() => {
-    const listener = document
-      .querySelector('body')
-      .addEventListener('click', clickListener, true);
-
-    return () => {
-      document
-        .querySelector('body')
-        .removeEventListener('click', clickListener, true);
-    };
-  }, []);
+  const getIsVisible = () => isVisible;
+  useImperativeHandle(ref, () => ({
+    getIsVisible,
+    setIsVisible,
+  }));
+  const hide = () => setIsVisible(false);
   return (
-    <div className={cx(blockReveal, isVisible ? revealOpen : revealClosed)}>
+    <div
+      ref={ref}
+      {...props}
+      className={cx(blockReveal, isVisible ? revealOpen : revealClosed)}
+    >
       <section
         className={cx(aboutSection, isVisible ? sectionOpen : sectionClosed)}
       >
+        <button className={backButton} onClick={hide} aria-hidden="true">
+          <IconArrowLeft className={backIcon} />
+          <span className={backLabel}>back</span>
+        </button>
         <p>Dear reader,</p>
         <p>
           My name is Bart Nowak. I was born in Poland in 1983 and got
@@ -55,6 +54,6 @@ const About = () => {
       </section>
     </div>
   );
-};
+});
 
 export default About;

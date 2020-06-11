@@ -11,9 +11,9 @@ const links = [
     href: '#',
     title: 'about',
     text: 'about',
-    onClick: (cb) => event => {
+    onClick: (ref) => (event) => {
       event.preventDefault();
-      cb(event);
+      ref.current.setIsVisible(!ref.current.getIsVisible());
     },
   },
   {
@@ -33,7 +33,7 @@ const links = [
   },
 ];
 
-const ContactLinks = ({ style, aboutCallback = () => null }) => {
+const ContactLinks = ({ style, aboutRef }) => {
   return (
     <animated.section style={style} className={section}>
       <ul className={linkList}>
@@ -44,7 +44,7 @@ const ContactLinks = ({ style, aboutCallback = () => null }) => {
               title={title}
               className={linkStyle}
               data-text={text}
-              onClick={onClick(aboutCallback)}
+              onClick={onClick(aboutRef)}
             >
               {text}
             </a>

@@ -3,6 +3,9 @@
 
 $transDuration: 0.5s;
 $transDelay: 0.55s;
+$ff: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
 
 .aboutSection {
   background-color: var(--color-accent-1);
@@ -19,22 +22,20 @@ $transDelay: 0.55s;
 
   @include media('>=L') {
     padding: 10rem 4rem 10rem 6.5rem;
-}
+  }
 
   p {
     text-align: justify;
     font-size: 1.75rem;
-    font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-      'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-      'Helvetica Neue', sans-serif;
+    font-family: $ff;
     width: 75vw;
     margin-bottom: 1rem;
 
     @include media('>=S') {
-        font-size: 1.25rem;
+      font-size: 1.25rem;
     }
     @include media('>=L') {
-        width: 55vw;
+      width: 55vw;
     }
   }
 }
@@ -48,7 +49,8 @@ $transDelay: 0.55s;
 }
 
 .blockReveal {
-  background-color: var(--color-accent-0);
+  background: var(--color-accent-0);
+  background: rgba(#5e81ac, 0.75); // won't work with custom prop
   position: fixed;
   left: 0;
   top: 0;
@@ -63,4 +65,50 @@ $transDelay: 0.55s;
 .revealClosed {
   height: 0vh;
   transition-delay: $transDelay;
+}
+
+.backIcon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.backLabel {
+  font-size: 1.5rem;
+  font-family: $ff;
+
+  @include media('>=S') {
+    font-size: 1.25rem;
+  }
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--color-foregroung-0);
+  @include theme-transition();
+
+  @include media('>=L') {
+    left: 6rem;
+  }
+
+  svg {
+    transition: fill 0.25s;
+  }
+
+  &:hover {
+    color: var(--color-accent-4);
+
+    svg {
+      fill: var(--color-accent-4);
+    }
+  }
 }
