@@ -6,6 +6,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
+    "deploy": "vercel",
+    "prod": "vercel --prod",
     "prettify": "yarn prettier --write ./**/*.js"
   },
   "dependencies": {
@@ -22,7 +24,8 @@
     "react-dom": "^16.13.1",
     "react-spring": "^8.0.27",
     "remark": "^12.0.0",
-    "remark-html": "^11.0.2"
+    "remark-html": "^11.0.2",
+    "vercel": "canary"
   },
   "devDependencies": {
     "@yarnpkg/fslib": "^2.0.0-rc.20",

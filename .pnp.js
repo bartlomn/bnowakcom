@@ -126,6 +126,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.2"
       ],
       [
+        "vercel",
+        "npm:19.0.2-canary.16"
+      ],
+      [
         "webpack",
         "npm:4.43.0"
       ]
@@ -161,6 +165,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["remark", "npm:12.0.0"],
             ["remark-html", "npm:11.0.2"],
             ["sass-loader", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.2"],
+            ["vercel", "npm:19.0.2-canary.16"],
             ["webpack", "npm:4.43.0"]
           ],
           "linkType": "SOFT",
@@ -1756,6 +1761,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/node", [
+        ["npm:14.0.13", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.0.13-12d0173e00-3.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:14.0.13"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/q", [
         ["npm:1.5.4", {
           "packageLocation": "./.yarn/cache/@types-q-npm-1.5.4-af8ca8cb0d-3.zip/node_modules/@types/q/",
@@ -1770,6 +1784,72 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-unist-npm-2.0.3-4b26dedfde-3.zip/node_modules/@types/unist/",
           "packageDependencies": [
             ["@types/unist", "npm:2.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/build-utils", [
+        ["npm:2.3.2-canary.6", {
+          "packageLocation": "./.yarn/cache/@vercel-build-utils-npm-2.3.2-canary.6-df1ec62c83-3.zip/node_modules/@vercel/build-utils/",
+          "packageDependencies": [
+            ["@vercel/build-utils", "npm:2.3.2-canary.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/go", [
+        ["npm:1.1.2-canary.2", {
+          "packageLocation": "./.yarn/cache/@vercel-go-npm-1.1.2-canary.2-39ecd9a935-3.zip/node_modules/@vercel/go/",
+          "packageDependencies": [
+            ["@vercel/go", "npm:1.1.2-canary.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/next", [
+        ["npm:2.6.5", {
+          "packageLocation": "./.yarn/cache/@vercel-next-npm-2.6.5-666d6787c0-3.zip/node_modules/@vercel/next/",
+          "packageDependencies": [
+            ["@vercel/next", "npm:2.6.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/node", [
+        ["npm:1.6.2-canary.6", {
+          "packageLocation": "./.yarn/cache/@vercel-node-npm-1.6.2-canary.6-cbdd02dbb2-3.zip/node_modules/@vercel/node/",
+          "packageDependencies": [
+            ["@vercel/node", "npm:1.6.2-canary.6"],
+            ["@types/node", "npm:14.0.13"],
+            ["ts-node", "virtual:cbdd02dbb2aef583cbfb0e92e4b5aaef1e8d376d77b94b7394be0538556d63477ef007acf153fe51278ede8dd244eb2cf7d3d9aafe70d7c10b274e7a3f239c12#npm:8.9.1"],
+            ["typescript", "patch:typescript@npm%3A3.9.3#builtin<compat/typescript>::version=3.9.3&hash=8cac75"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/python", [
+        ["npm:1.2.2-canary.2", {
+          "packageLocation": "./.yarn/cache/@vercel-python-npm-1.2.2-canary.2-c8620e894f-3.zip/node_modules/@vercel/python/",
+          "packageDependencies": [
+            ["@vercel/python", "npm:1.2.2-canary.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/ruby", [
+        ["npm:1.2.2-canary.1", {
+          "packageLocation": "./.yarn/cache/@vercel-ruby-npm-1.2.2-canary.1-9556fa1012-3.zip/node_modules/@vercel/ruby/",
+          "packageDependencies": [
+            ["@vercel/ruby", "npm:1.2.2-canary.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/static-build", [
+        ["npm:0.17.2-canary.1", {
+          "packageLocation": "./.yarn/cache/@vercel-static-build-npm-0.17.2-canary.1-4b94c4ae2e-3.zip/node_modules/@vercel/static-build/",
+          "packageDependencies": [
+            ["@vercel/static-build", "npm:0.17.2-canary.1"]
           ],
           "linkType": "HARD",
         }]
@@ -2256,6 +2336,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["arg", [
+        ["npm:4.1.3", {
+          "packageLocation": "./.yarn/cache/arg-npm-4.1.3-1748b966a8-3.zip/node_modules/arg/",
+          "packageDependencies": [
+            ["arg", "npm:4.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["argparse", [
         ["npm:1.0.10", {
           "packageLocation": "./.yarn/cache/argparse-npm-1.0.10-528934e59d-3.zip/node_modules/argparse/",
@@ -2662,6 +2751,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["remark", "npm:12.0.0"],
             ["remark-html", "npm:11.0.2"],
             ["sass-loader", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.2"],
+            ["vercel", "npm:19.0.2-canary.16"],
             ["webpack", "npm:4.43.0"]
           ],
           "linkType": "SOFT",
@@ -4076,6 +4166,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["detab", "npm:2.0.3"],
             ["repeat-string", "npm:1.6.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["diff", [
+        ["npm:4.0.2", {
+          "packageLocation": "./.yarn/cache/diff-npm-4.0.2-73133c7102-3.zip/node_modules/diff/",
+          "packageDependencies": [
+            ["diff", "npm:4.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -6409,6 +6508,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["make-dir", "npm:3.1.0"],
             ["semver", "npm:6.3.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["make-error", [
+        ["npm:1.3.6", {
+          "packageLocation": "./.yarn/cache/make-error-npm-1.3.6-ccb85d9458-3.zip/node_modules/make-error/",
+          "packageDependencies": [
+            ["make-error", "npm:1.3.6"]
           ],
           "linkType": "HARD",
         }]
@@ -10646,6 +10754,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["ts-node", [
+        ["virtual:cbdd02dbb2aef583cbfb0e92e4b5aaef1e8d376d77b94b7394be0538556d63477ef007acf153fe51278ede8dd244eb2cf7d3d9aafe70d7c10b274e7a3f239c12#npm:8.9.1", {
+          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-26fc69d6ef/0/cache/ts-node-npm-8.9.1-aebcfc876f-3.zip/node_modules/ts-node/",
+          "packageDependencies": [
+            ["ts-node", "virtual:cbdd02dbb2aef583cbfb0e92e4b5aaef1e8d376d77b94b7394be0538556d63477ef007acf153fe51278ede8dd244eb2cf7d3d9aafe70d7c10b274e7a3f239c12#npm:8.9.1"],
+            ["arg", "npm:4.1.3"],
+            ["diff", "npm:4.0.2"],
+            ["make-error", "npm:1.3.6"],
+            ["source-map-support", "npm:0.5.19"],
+            ["typescript", "patch:typescript@npm%3A3.9.3#builtin<compat/typescript>::version=3.9.3&hash=8cac75"],
+            ["yn", "npm:3.1.1"]
+          ],
+          "packagePeers": [
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["ts-pnp", [
         ["virtual:c497046afcbefb679e3fe12575088ec12205b913a36c3d158b27e7cd646d448426540ab27ba98e54ddb75b1ed97de7e3ce5dc0158c9ba4e76ce942c87e5d02d8#npm:1.2.0", {
           "packageLocation": "./.yarn/$$virtual/ts-pnp-virtual-abd2827f29/0/cache/ts-pnp-npm-1.2.0-43620de7df-3.zip/node_modules/ts-pnp/",
@@ -10726,6 +10852,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typedarray-npm-0.0.6-37638b2241-3.zip/node_modules/typedarray/",
           "packageDependencies": [
             ["typedarray", "npm:0.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["typescript", [
+        ["patch:typescript@npm%3A3.9.3#builtin<compat/typescript>::version=3.9.3&hash=8cac75", {
+          "packageLocation": "./.yarn/cache/typescript-patch-e0510ef7de-3.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A3.9.3#builtin<compat/typescript>::version=3.9.3&hash=8cac75"]
           ],
           "linkType": "HARD",
         }]
@@ -11075,6 +11210,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["vercel", [
+        ["npm:19.0.2-canary.16", {
+          "packageLocation": "./.yarn/unplugged/vercel-npm-19.0.2-canary.16-511ba8a8d1/node_modules/vercel/",
+          "packageDependencies": [
+            ["vercel", "npm:19.0.2-canary.16"],
+            ["@vercel/build-utils", "npm:2.3.2-canary.6"],
+            ["@vercel/go", "npm:1.1.2-canary.2"],
+            ["@vercel/next", "npm:2.6.5"],
+            ["@vercel/node", "npm:1.6.2-canary.6"],
+            ["@vercel/python", "npm:1.2.2-canary.2"],
+            ["@vercel/ruby", "npm:1.2.2-canary.1"],
+            ["@vercel/static-build", "npm:0.17.2-canary.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["verror", [
         ["npm:1.10.0", {
           "packageLocation": "./.yarn/cache/verror-npm-1.10.0-c3f839c579-3.zip/node_modules/verror/",
@@ -11381,6 +11532,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["yargs-parser", "npm:13.1.2"],
             ["camelcase", "npm:5.3.1"],
             ["decamelize", "npm:1.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["yn", [
+        ["npm:3.1.1", {
+          "packageLocation": "./.yarn/cache/yn-npm-3.1.1-8ad4259784-3.zip/node_modules/yn/",
+          "packageDependencies": [
+            ["yn", "npm:3.1.1"]
           ],
           "linkType": "HARD",
         }]
