@@ -15,6 +15,12 @@ const keywords = [
 
 const customHead = () => (
   <>
+    <link rel="preconnect" href="https://www.google-analytics.com"/>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+    <link rel="preconnect" href="https://stats.g.doubleclick.net"/>
+    <link rel="dns-prefetch" href="https://stats.g.doubleclick.net"/>
+    <link rel="preconnect" href="https://www.googletagmanager.com"/>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
     <meta charSet="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>bart.rocks</title>

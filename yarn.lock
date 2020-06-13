@@ -9860,8 +9860,8 @@ typescript@3.9.3:
   linkType: hard
 
 "vercel@npm:canary":
-  version: 19.0.2-canary.16
-  resolution: "vercel@npm:19.0.2-canary.16"
+  version: 19.0.2-canary.17
+  resolution: "vercel@npm:19.0.2-canary.17"
   dependencies:
     "@vercel/build-utils": 2.3.2-canary.6
     "@vercel/go": 1.1.2-canary.2
@@ -9873,7 +9873,7 @@ typescript@3.9.3:
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: 3/88381f9ac514c7ec4fa8fe15caec2d66aaabd906c844039074cf924a7ff3bda443df83f0e1c0f054c1d5187a081c7e393db0033a2a37991c2c0765a7bf7a8f17
+  checksum: 3/0be371c511c3568e2ef726e095a043fb372ec979ad7b0dd2a3842bda29b03ccdc29483b8cc69fe94a8643b48d74a1abccd9bd12c50692c918978d970c984d41c
   languageName: node
   linkType: hard
 

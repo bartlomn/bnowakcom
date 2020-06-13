@@ -127,7 +127,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "vercel",
-        "npm:19.0.2-canary.16"
+        "npm:19.0.2-canary.17"
       ],
       [
         "webpack",
@@ -165,7 +165,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["remark", "npm:12.0.0"],
             ["remark-html", "npm:11.0.2"],
             ["sass-loader", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.2"],
-            ["vercel", "npm:19.0.2-canary.16"],
+            ["vercel", "npm:19.0.2-canary.17"],
             ["webpack", "npm:4.43.0"]
           ],
           "linkType": "SOFT",
@@ -2751,7 +2751,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["remark", "npm:12.0.0"],
             ["remark-html", "npm:11.0.2"],
             ["sass-loader", "virtual:f72255fff3b9d1c69e5016262d02d27b445cbda4a4c51c4cf4e2c6af1c1dd8e1e929c81f85dd4b70b42a6660a7cf867d45054ee9a10f356c4e032f95853d459f#npm:8.0.2"],
-            ["vercel", "npm:19.0.2-canary.16"],
+            ["vercel", "npm:19.0.2-canary.17"],
             ["webpack", "npm:4.43.0"]
           ],
           "linkType": "SOFT",
@@ -11211,10 +11211,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["vercel", [
-        ["npm:19.0.2-canary.16", {
-          "packageLocation": "./.yarn/unplugged/vercel-npm-19.0.2-canary.16-511ba8a8d1/node_modules/vercel/",
+        ["npm:19.0.2-canary.17", {
+          "packageLocation": "./.yarn/unplugged/vercel-npm-19.0.2-canary.17-8b990d280e/node_modules/vercel/",
           "packageDependencies": [
-            ["vercel", "npm:19.0.2-canary.16"],
+            ["vercel", "npm:19.0.2-canary.17"],
             ["@vercel/build-utils", "npm:2.3.2-canary.6"],
             ["@vercel/go", "npm:1.1.2-canary.2"],
             ["@vercel/next", "npm:2.6.5"],
