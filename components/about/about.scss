@@ -19,6 +19,8 @@ $ff: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
   flex-direction: column;
   justify-content: center;
   transition: clip-path $transDuration ease;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
   @include media('>=L') {
     padding: 10rem 4rem 10rem 6.5rem;
@@ -42,6 +44,7 @@ $ff: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
 .sectionOpen {
   clip-path: inset(0 0 0% 0);
   transition-delay: $transDelay;
+  overflow-y: auto;
 }
 .sectionClosed {
   clip-path: inset(0 0 100% 0);
@@ -56,7 +59,8 @@ $ff: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
   top: 0;
   width: 100vw;
   transition: height $transDuration ease;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .revealOpen {
   height: 100vh;
